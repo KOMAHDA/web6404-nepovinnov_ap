@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты и запись на примерку</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="header__title">Контакты и запись на примерку</h1>
+        <p class="header__subtitle">Свяжитесь с нами для консультации с мастером</p>
+    </header>
+
+    <nav class="nav">
+        <a class="nav__link" href="index.html">Главная</a>
+        <a class="nav__link" href="catalog.html">Каталог и цены</a>
+        <a class="nav__link nav__link--active" href="contacts.html">Контакты и запись</a>
+    </nav>
+
+    <main class="main">
+        <h2>Как нас найти</h2>
+
+        <div class="card">
+            <p><strong>Адрес:</strong> г. Самара, ул. Молодогвардейская, д. 151</p>
+            <p><strong>Телефон:</strong> <a href="tel:+79990001122">+7 (999) 000-11-22</a></p>
+            <p><strong>Электронная почта:</strong> <a href="mailto:order@suits-tailor.ru">order@suits-tailor.ru</a></p>
+            <p><strong>Часы работы:</strong> Пн–Сб с 10:00 до 20:00 (по предварительной записи)</p>
+        </div>
+
+        <section>
+            <h2>Онлайн-запись на примерку</h2>
+            <form class="fitting-form" id="fittingForm">
+                <div class="fitting-form__group">
+                    <label for="clientName">Ваше имя:</label>
+                    <input class="fitting-form__input" type="text" id="clientName" name="clientName" placeholder="Иван Иванов" required>
+                </div>
+
+                <div class="fitting-form__group">
+                    <label for="clientEmail">Электронная почта:</label>
+                    <input class="fitting-form__input" type="email" id="clientEmail" name="clientEmail" placeholder="example@mail.ru" required>
+                </div>
+
+                <div class="fitting-form__group">
+                    <label for="fittingDate">Желаемая дата примерки:</label>
+                    <input class="fitting-form__input" type="date" id="fittingDate" name="fittingDate" required>
+                </div>
+
+                <div class="fitting-form__group">
+                    <label for="suitModel">Интересующая модель:</label>
+                    <select class="fitting-form__select" id="suitModel" name="suitModel">
+                        <option value="Костюм-двойка темно-синий">Костюм-двойка темно-синий</option>
+                        <option value="Серый костюм в клетку">Серый костюм в клетку</option>
+                        <option value="Костюм-тройка с жилетом">Костюм-тройка с жилетом</option>
+                        <option value="Смокинг вечерний">Смокинг вечерний</option>
+                    </select>
+                </div>
+
+                <div class="fitting-form__group fitting-form__group--checkbox">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">Согласен на обработку персональных данных</label>
+                </div>
+
+                <button class="fitting-form__submit" type="submit">Отправить заявку</button>
+                <p class="fitting-form__status" id="formStatus"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Ателье мужского костюма. Лабораторная работа №4.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

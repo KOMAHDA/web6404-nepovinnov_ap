@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог костюмов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="header__title">Каталог и стоимость</h1>
+        <p class="header__subtitle">Выбор моделей, материалов и базовая стоимость пошива</p>
+    </header>
+
+    <nav class="nav">
+        <a class="nav__link" href="index.html">Главная</a>
+        <a class="nav__link nav__link--active" href="catalog.html">Каталог и цены</a>
+        <a class="nav__link" href="contacts.html">Контакты и запись</a>
+    </nav>
+
+    <main class="main">
+        <h2>Популярные модели</h2>
+        <p>
+            Мы работаем с шерстяными тканями Super 110s–150s, льном и хлопком.
+            Ниже представлены базовые модели и сводная таблица сроков изготовления.
+        </p>
+
+        <section class="catalog-grid">
+            <article class="catalog-grid__card">
+                <h3 class="catalog-grid__title">Костюм-двойка темно-синий</h3>
+                <p>100% шерсть Super 120s. Универсальный вариант для офиса и деловых встреч.</p>
+                <p class="catalog-grid__price">45 000 руб.</p>
+            </article>
+
+            <article class="catalog-grid__card">
+                <h3 class="catalog-grid__title">Серый костюм в клетку</h3>
+                <p>Шерсть с добавлением кашемира, узор Prince of Wales. Выразительный классический крой.</p>
+                <p class="catalog-grid__price">52 000 руб.</p>
+            </article>
+
+            <article class="catalog-grid__card">
+                <h3 class="catalog-grid__title">Костюм-тройка с жилетом</h3>
+                <p>Камвольная шерсть Super 130s. Идеальная посадка для торжественных мероприятий.</p>
+                <p class="catalog-grid__price">62 000 руб.</p>
+            </article>
+
+            <article class="catalog-grid__card">
+                <h3 class="catalog-grid__title">Смокинг вечерний</h3>
+                <p>Шерсть Super 150s и шелк, атласные лацканы. Строгий дресс-код Black Tie.</p>
+                <p class="catalog-grid__price">75 000 руб.</p>
+            </article>
+        </section>
+
+        <h2>Сводный прайс-лист</h2>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th class="price-table__head price-table__cell--left">Модель костюма</th>
+                    <th class="price-table__head price-table__cell--left">Материал</th>
+                    <th class="price-table__head price-table__cell--center">Срок пошива</th>
+                    <th class="price-table__head price-table__cell--right">Базовая цена</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="price-table__cell price-table__cell--left">Костюм-двойка темно-синий</td>
+                    <td class="price-table__cell price-table__cell--left">100% шерсть Super 120s</td>
+                    <td class="price-table__cell price-table__cell--center">14 дней</td>
+                    <td class="price-table__cell price-table__cell--right">45 000 руб.</td>
+                </tr>
+                <tr>
+                    <td class="price-table__cell price-table__cell--left">Серый костюм в клетку (Prince of Wales)</td>
+                    <td class="price-table__cell price-table__cell--left">Шерсть с добавлением кашемира</td>
+                    <td class="price-table__cell price-table__cell--center">18 дней</td>
+                    <td class="price-table__cell price-table__cell--right">52 000 руб.</td>
+                </tr>
+                <tr>
+                    <td class="price-table__cell price-table__cell--left">Костюм-тройка (с жилетом)</td>
+                    <td class="price-table__cell price-table__cell--left">Камвольная шерсть Super 130s</td>
+                    <td class="price-table__cell price-table__cell--center">21 день</td>
+                    <td class="price-table__cell price-table__cell--right">62 000 руб.</td>
+                </tr>
+                <tr>
+                    <td class="price-table__cell price-table__cell--left">Смокинг вечерний с атласными лацканами</td>
+                    <td class="price-table__cell price-table__cell--left">Шерсть Super 150s + шелк</td>
+                    <td class="price-table__cell price-table__cell--center">25 дней</td>
+                    <td class="price-table__cell price-table__cell--right">75 000 руб.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="card">
+            <h3>Примечание по подгонке:</h3>
+            <p>
+                В стоимость любого готового костюма уже включена финальная подгонка по длине
+                рукавов и брюк в течение первой недели после примерки.
+            </p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Ателье мужского костюма. Лабораторная работа №4.</p>
+    </footer>
+
+</body>
+</html>
